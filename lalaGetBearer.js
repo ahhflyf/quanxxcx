@@ -11,7 +11,7 @@ const bearerkey = 'Bearer_lala'
             
             $.write(ba, '#Bearer_lala');
             $.notify('获取Bearer成功',  ba);
-            console.log(ba);
+            console.log('lala' ,ba);
         }
     }
 
