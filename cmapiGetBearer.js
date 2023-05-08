@@ -1,4 +1,4 @@
-const $ = new API("xcx_getToken");
+const $ = new API("cmapi_getToken");
 const bearerkey = 'Bearer_cmapi'
 !(async () => {
     if ($.env.isNode) {
