@@ -11,7 +11,7 @@ const bearerkey = 'Bearer_cmapi'
             
             $.write(ba, '#Bearer_cmapi');
             $.notify('获取Bearer成功',  ba);
-            console.log(ba);
+            console.log('cmapi',ba);
         }
     }
 
