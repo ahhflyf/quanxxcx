@@ -1,0 +1,96 @@
+
+/**
+ * @fileoverview Template to compose HTTP reqeuest.
+ * 
+ */
+
+const url = `https://mina-cmapi.cp-properties.cn:1443/api/VipInfo/Sign`;
+const method = `GET`;
+const cookieKey_drc = 'Bearer_cmapi'
+const sy = init();
+var Valcmapi = sy.getdata(cookieKey_cmapi);
+const headers = {
+'Accept-Encoding' : `gzip,compress,br,deflate`,
+'content-type' : `application/json`,
+'Connection' : `keep-alive`,
+'Referer' : `https://servicewechat.com/wx3f27877140587959/55/page-frame.html`,
+'buildingid' : `2`,
+'Host' : `mina-cmapi.cp-properties.cn:1443`,
+'User-Agent' : `Mozilla/5.0 (iPhone; CPU iPhone OS 16_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.32(0x18002038) NetType/WIFI Language/zh_CN`,
+'Authorization' : Valcmapi
+};
+const body = ``;
+
+const myRequest = {
+    url: url,
+    method: method,
+    headers: headers,
+    body: body
+};
+
+
+
+
+$task.fetch(myRequest).then(response => {
+    console.log("船厂签到" + "\n\n" + response.body);
+const llsresult = JSON.parse(response.body);
+$notify("船厂签到：" + llsresult.msg);
+    $done();
+}, reason => {
+    console.log(reason.error);
+    $done();
+});
+
+
+
+function init() {
+  isSurge = () => {
+    return undefined === this.$httpClient ? false : true
+  }
+  isQuanX = () => {
+    return undefined === this.$task ? false : true
+  }
+  getdata = (key) => {
+    if (isSurge()) return $persistentStore.read(key)
+    if (isQuanX()) return $prefs.valueForKey(key)
+  }
+  setdata = (key, val) => {
+    if (isSurge()) return $persistentStore.write(key, val)
+    if (isQuanX()) return $prefs.setValueForKey(key, val)
+  }
+  msg = (title, subtitle, body) => {
+    if (isSurge()) $notification.post(title, subtitle, body)
+    if (isQuanX()) $notify(title, subtitle, body)
+  }
+  log = (message) => console.log(message)
+  get = (url, cb) => {
+    if (isSurge()) {
+      $httpClient.get(url, cb)
+    }
+    if (isQuanX()) {
+      url.method = 'GET'
+      $task.fetch(url).then((resp) => cb(null, {}, resp.body))
+    }
+  }
+  post = (options, callback) => {
+    if (isQuanX()) {
+      if (typeof options == "string") options = { url: options }
+      options["method"] = "POST"
+      $task.fetch(options).then(response => {
+        response["status"] = response.statusCode
+        callback(null, response, response.body)
+      }, reason => callback(reason.error, null, null))
+    }
+    if (isSurge()) $httpClient.post(options, callback)
+  }
+  done = (value = {}) => {
+    $done(value)
+  }
+  return { isSurge, isQuanX, msg, log, getdata, setdata, get, post, done }
+}
+
+
+
+function random(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
