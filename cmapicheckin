@@ -6,7 +6,7 @@
 
 const url = `https://mina-cmapi.cp-properties.cn:1443/api/VipInfo/Sign`;
 const method = `GET`;
-const cookieKey_drc = 'Bearer_cmapi'
+const cookieKey_cmapi = 'Bearer_cmapi'
 const sy = init();
 var Valcmapi = sy.getdata(cookieKey_cmapi);
 const headers = {
