@@ -27,7 +27,7 @@ const myRequest = {
 $task.fetch(myRequest).then(response => {
     console.log(response.statusCode + "\n\n" + response.body);
 const lalaresult = JSON.parse(response.body);
-$notify("lala签到" + lalaresult.msg);
+$notify("lala签到" + lalaresult.success);
     $done();
 }, reason => {
     console.log(reason.error);
