@@ -32,7 +32,7 @@ $task.fetch(myRequest).then(response => {
     console.log(response.statusCode + "\n\n" + response.body);
 const drcresult = JSON.parse(response.body);
 
-$notify("大融城签到" + drcresult.msg);
+$notify("大融城签到" + drcresult.success);
     $done();
 }, reason => {
     console.log(reason.error);
