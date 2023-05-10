@@ -34,7 +34,7 @@ const myRequest = {
 $task.fetch(myRequest).then(response => {
     console.log("船厂签到" + "\n\n" + response.body);
 const llsresult = JSON.parse(response.body);
-$notify("船厂签到：" + llsresult.msg);
+$notify("船厂签到：" + llsresult.success);
     $done();
 }, reason => {
     console.log(reason.error);
