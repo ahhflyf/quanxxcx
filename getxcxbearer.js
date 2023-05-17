@@ -1,6 +1,6 @@
 # 此远程订阅用于解决QX任务脚本的cookie获取，仅适用于QX 1.0.10及更高版本，您可在使用后手动将其禁用，以避免无意义的MITM。
 
-hostname = member.imixpark.com, mina-cmapi.cp-properties.cn, weixinnew.lalaport-jq.com
+hostname = member.imixpark.com, mina-cmapi.cp-properties.cn, weixinnew.lalaport-jq.com,vipclub.lcmsh.com
 
 
 # lalaport cookie
