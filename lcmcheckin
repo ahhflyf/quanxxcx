@@ -1,5 +1,8 @@
 const url = `https://vipclub.lcmsh.com:52501/api/Sign/SignIn`;
 const method = `POST`;
+const cookieKey_lcm = 'Bearer_lcm'
+const sy = init();
+var Vallcm = sy.getdata(cookieKey_lcm);
 const headers = {
 'Accept-Encoding' : `gzip,compress,br,deflate`,
 'content-type' : `application/json`,
@@ -7,7 +10,7 @@ const headers = {
 'Referer' : `https://servicewechat.com/wx69b248b2436cf763/53/page-frame.html`,
 'buildingid' : `LCM`,
 'Host' : `vipclub.lcmsh.com:52501`,
-'Authorization' : `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxODAxMTAwNjE5IiwianRpIjoiMmFiZmU2MGMtYTBlZi00MDQ5LWE2MTgtNzYyOTk5MTliOWQ3IiwiaWF0IjoxNjg0MjI0MTU2LCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3ByaW1hcnlncm91cHNpZCI6ImFwaS5hcHAubWVtYmVyIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6IjE4MDExMDA2MTkiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJtZW1iZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9zaWQiOiJtZW1iZXIiLCJkYXRhZnJvbSI6IldYIiwidG9rZW5lZmZlY3RpdmVjaGVjayI6IjEiLCJ2aXBjb2RlIjoiMTgwMTEwMDYxOSIsIm9wZW5pZCI6Im9DWXBFNVpCWjFCUjJYZVB6WUlZNWtaN1p6RFEiLCJuYmYiOjE2ODQxNjY1NTYsImV4cCI6MTY4NDM0NjU1NiwiaXNzIjoiZnoudjUuYXBpIiwiYXVkIjoiZnoudjUuYXBwIn0._gWGYWhiCOK5m2MJOIhPq9kP078mFLDTomtqdan3GuE`,
+'Authorization' : Vallcm,
 'User-Agent' : `Mozilla/5.0 (iPhone; CPU iPhone OS 16_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.32(0x18002038) NetType/WIFI Language/zh_CN`
 };
 const body = `null`;
