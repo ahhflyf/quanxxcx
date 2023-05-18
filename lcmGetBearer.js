@@ -9,9 +9,9 @@ const bearerkey = 'Bearer_lcm'
         let ba = headers_drc['Authorization'];      
         if (ba != (undefined || null)) {
             
-            $.write(ba, '#Bearer_cmapi');
+            $.write(ba, '#Bearer_lcm');
             $.notify('获取Bearer成功',  ba);
-            console.log('cmapi',ba);
+            console.log('lcm',ba);
         }
     }
 
