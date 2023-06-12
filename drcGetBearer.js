@@ -10,7 +10,7 @@ const bearerkey = 'Bearer_drc'
         if (ba != (undefined || null)) {
             
             $.write(ba, '#Bearer_drc');
-            $.notify('获取Bearer成功',  ba);
+            $.notify('获取大融城:Bearer成功',  ba);
             console.log(ba);
         }
     }
