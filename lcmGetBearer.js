@@ -10,7 +10,7 @@ const bearerkey = 'Bearer_lcm'
         if (ba != (undefined || null)) {
             
             $.write(ba, '#Bearer_lcm');
-            $.notify('获取Bearer成功',  ba);
+            $.notify('获取LCM:Bearer成功',  ba);
             console.log('lcm',ba);
         }
     }
