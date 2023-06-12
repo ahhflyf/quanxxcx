@@ -10,7 +10,7 @@ const bearerkey = 'Bearer_lala'
         if (ba != (undefined || null)) {
             
             $.write(ba, '#Bearer_lala');
-            $.notify('获取Bearer成功',  ba);
+            $.notify('获取lala:Bearer成功',  ba);
             console.log('lala' ,ba);
         }
     }
