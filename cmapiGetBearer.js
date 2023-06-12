@@ -10,7 +10,7 @@ const bearerkey = 'Bearer_cmapi'
         if (ba != (undefined || null)) {
             
             $.write(ba, '#Bearer_cmapi');
-            $.notify('获取Bearer成功',  ba);
+            $.notify('获取船厂：Bearer成功',  ba);
             console.log('cmapi',ba);
         }
     }
