@@ -14,4 +14,4 @@ hostname = member.imixpark.com, mina-cmapi.cp-properties.cn, weixinnew.lalaport-
 # lcm cookie
 ^https\:\/\/vipclub\.lcmsh\.com\:52501\/api\/Sign\/SignIn url script-request-header https://raw.githubusercontent.com/ahhflyf/quanxxcx/main/lcmGetBearer.js
 # wh cookie
-^https\:\/\/www\.kezaihui\.com\/saintpeter\/user url script-request-header https://raw.githubusercontent.com/ahhflyf/quanxxcx/main/whGetBearer.js
+^https\:\/\/www\.kezaihui\.com\/athena\/view\_stats url script-request-header https://raw.githubusercontent.com/ahhflyf/quanxxcx/main/whGetBearer.js
