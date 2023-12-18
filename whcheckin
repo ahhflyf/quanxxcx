@@ -1,19 +1,20 @@
-const url = `https://weixinnew.lalaport-jq.com:42211/api/Sign/SignIn`;
+const url = `https://www.kezaihui.com/saintpeter/user/business_groups/0fb2d1dbebc04b9ca376a0265f27539f/user_checkin_logs/`;
 const method = `POST`;
-const cookieKey_lala = 'Bearer_lala'
+const cookieKey_wh = 'Bearer_wh'
 const sy = init();
-var Vallala = sy.getdata(cookieKey_lala);
+var Valwh = sy.getdata(cookieKey_wh);
 const headers = {
 'Accept-Encoding' : `gzip,compress,br,deflate`,
-'content-type' : `application/json`,
+'X-Mini-App-Version' : `st.4.5.4`,
 'Connection' : `keep-alive`,
-'Referer' : `https://servicewechat.com/wx8f8b976e0c4a82e2/22/page-frame.html`,
-'buildingid' : `ST0001`,
-'Host' : `weixinnew.lalaport-jq.com:42211`,
-'Authorization' : Vallala,
-'User-Agent' : `Mozilla/5.0 (iPhone; CPU iPhone OS 16_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.32(0x18002038) NetType/WIFI Language/zh_CN`
+'content-type' : `application/json;charset=utf-8`,
+'Referer' : `https://servicewechat.com/wxb30bdff4f9d568bc/9/page-frame.html`,
+'Host' : `www.kezaihui.com`,
+'X-Zh-Crumbs' : `{"client":"storehome","version":"st.4.5.4","sessionId":"1692179399210-0210492"}`,
+'Authorization' : Valwh,
+'User-Agent' : `Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.40(0x1800282c) NetType/4G Language/zh_CN`
 };
-const body = `null`;
+const body = `{}`;
 
 const myRequest = {
     url: url,
@@ -22,12 +23,19 @@ const myRequest = {
     body: body
 };
 
-
-
 $task.fetch(myRequest).then(response => {
     console.log(response.statusCode + "\n\n" + response.body);
-const lalaresult = JSON.parse(response.body);
-$notify("lala签到" + lalaresult.success);
+const whresult = JSON.parse(response.body);
+if (whresult.phone == "18621936380"){
+    $notify("wh签到成功")}
+    else if (response.statusCode == "401"){
+    $notify("whcookie失效");}
+    else {
+    $notify("wh签到失败");}
+    
+    $done();
+    
+    
     $done();
 }, reason => {
     console.log(reason.error);
