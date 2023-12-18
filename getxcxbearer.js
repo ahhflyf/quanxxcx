@@ -1,6 +1,6 @@
 # 此远程订阅用于解决QX任务脚本的cookie获取，仅适用于QX 1.0.10及更高版本，您可在使用后手动将其禁用，以避免无意义的MITM。
 
-hostname = member.imixpark.com, mina-cmapi.cp-properties.cn, weixinnew.lalaport-jq.com,vipclub.lcmsh.com
+hostname = member.imixpark.com, mina-cmapi.cp-properties.cn, weixinnew.lalaport-jq.com,vipclub.lcmsh.com,kezaihui.com
 
 
 # lalaport cookie
@@ -14,4 +14,4 @@ hostname = member.imixpark.com, mina-cmapi.cp-properties.cn, weixinnew.lalaport-
 # lcm cookie
 ^https\:\/\/vipclub\.lcmsh\.com\:52501\/api\/Sign\/SignIn url script-request-header https://raw.githubusercontent.com/ahhflyf/quanxxcx/main/lcmGetBearer.js
 # wh cookie
-^https\:\/\/www\.kezaihui\.com\/saintpeter\/user\/
+^https\:\/\/www\.kezaihui\.com\/saintpeter\/user url script-request-header https://raw.githubusercontent.com/ahhflyf/quanxxcx/main/whGetBearer.js
