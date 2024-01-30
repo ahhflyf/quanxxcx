@@ -14,7 +14,7 @@ const bearerkey = 'Bearer_xdh'
             
             $.write(ba, '#Bearer_xdh');
             $.notify('获取新达汇：Bearer成功',  ba);
-            console.log('xdh',ba);
+            console.log('xdh',bamkey);
         }
     }
 
