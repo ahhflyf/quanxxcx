@@ -1,10 +1,12 @@
 const url = `https://wox2019.woxshare.com/clientApi/signInRecordAdd`;
 const method = `POST`;
-const cookieKey_xdh = 'Bearer_xdh'
+const baheadersKey_xdh = 'baheaders_xdh'
+const babodyKey_xdh = 'babody_xdh'
 const sy = init();
-var Vallcm = sy.getdata(cookieKey_xdh);
-const headers = `{baheaders}`;
-const body = `{babody}`;
+var Valheaders = sy.getdata(baheaders_xdh);
+var Valbody = sy.getdata(babody_xdh);
+const headers = `{Valheaders}`;
+const body = `{Valbody}`;
 
 const myRequest = {
     url: url,
