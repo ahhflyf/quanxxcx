@@ -5,12 +5,15 @@ const bearerkey = 'Bearer_xdh'
         console.log('仅限iOS设备抓包用!');
     }
     else {
-        let headers_drc = $request.headers;
-        let ba = headers_drc['token'];      
-        if (ba != (undefined || null)) {
+        let headers_xdh = $request.headers;
+        let body_xdh = $request.body;
+        let bamkey = headers_drc['mKey','token'];
+        let babody = body_xdh;
+        #let babody = headers_drc['Authorization'];
+        if (bamkey != (undefined || null)) {
             
             $.write(ba, '#Bearer_xdh');
-            $.notify('获取船厂：Bearer成功',  ba);
+            $.notify('获取新达汇：Bearer成功',  ba);
             console.log('xdh',ba);
         }
     }
