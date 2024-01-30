@@ -7,14 +7,12 @@ const bearerkey = 'Bearer_xdh'
     else {
         let headers_xdh = $request.headers;
         let baheaders = JSON.stringify(headers_xdh);
-        let body_xdh = $request.body;
-        let babody = JSON.stringify(body_xdh);
-        if ((baheaders !== undefined && baheaders !== null) && (babody !== undefined && babody !== null)){
+       
+        if ((baheaders !== undefined && baheaders !== null)){
             
             $.write(baheaders, '#baheaders_xdh');
-            $.write(babody, '#babody_xdh');
-            $.notify('获取新达汇：成功',  babody);
-            console.log('xdh',babody);
+            $.notify('获取新达汇：headers成功',  baheaders);
+            console.log('xdhheaders',baheaders);
         }
     }
 })().catch((e) => {
