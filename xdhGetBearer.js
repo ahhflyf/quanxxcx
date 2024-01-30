@@ -11,8 +11,8 @@ const bearerkey = 'Bearer_xdh'
         let babody = JSON.stringify(body_xdh);
         if (baheaders != (undefined || null)) {
             
-            $.write(baheaders, '#Bearer_xdh');
-            $.write(babody, '#Bearer_xdh');
+            $.write(baheaders, '#baheaders_xdh');
+            $.write(babody, '#babody_xdh');
             $.notify('获取新达汇：成功',  babody);
             console.log('xdh',babody);
         }
