@@ -3,8 +3,8 @@ const method = `POST`;
 const baheadersKey_xdh = 'baheaders_xdh'
 const babodyKey_xdh = 'babody_xdh'
 const sy = init();
-var Valheaders = sy.getdata(baheaders_xdh);
-var Valbody = sy.getdata(babody_xdh);
+var Valheaders = sy.getdata(baheadersKey_xdh);
+var Valbody = sy.getdata(babodyKey_xdh);
 const headers = `{Valheaders}`;
 const body = `{Valbody}`;
 
