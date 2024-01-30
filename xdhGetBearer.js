@@ -9,7 +9,7 @@ const bearerkey = 'Bearer_xdh'
         let body_xdh = $request.body;
         let ba = headers_xdh[];
         #let babody = body_xdh[];
-        if (bamkey != (undefined || null)) {
+        if (ba != (undefined || null)) {
             
             $.write(ba, '#Bearer_xdh');
             $.notify('获取新达汇：Bearer成功',  ba);
