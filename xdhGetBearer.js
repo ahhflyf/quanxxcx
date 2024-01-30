@@ -7,8 +7,7 @@ const bearerkey = 'Bearer_xdh'
     else {
         let headers_xdh = $request.headers;
         let body_xdh = $request.body;
-        let headersString = JSON.stringify(headers_xdh);
-        let ba = headers_xdh[];
+        let ba = JSON.stringify(headers_xdh);
         #let babody = body_xdh[];
         if (ba != (undefined || null)) {
             
