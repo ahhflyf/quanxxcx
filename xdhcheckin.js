@@ -3,8 +3,7 @@ const method = `POST`;
 const cookieKey_xdh = 'Bearer_xdh'
 const sy = init();
 var Vallcm = sy.getdata(cookieKey_xdh);
-const headers = {baheaders
-};
+const headers = `{baheaders}`;
 const body = `{babody}`;
 
 const myRequest = {
