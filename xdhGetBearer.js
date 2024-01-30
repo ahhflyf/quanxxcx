@@ -9,7 +9,7 @@ const bearerkey = 'Bearer_xdh'
         let baheaders = JSON.stringify(headers_xdh);
         let body_xdh = $request.body;
         let babody = JSON.stringify(body_xdh);
-        if (baheaders != (undefined || null)) && (babody != (undefined || null)){
+        if ((baheaders !== undefined && baheaders !== null) && (babody !== undefined && babody !== null)){
             
             $.write(baheaders, '#baheaders_xdh');
             $.write(babody, '#babody_xdh');
