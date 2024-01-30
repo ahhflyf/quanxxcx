@@ -12,8 +12,8 @@ const bearerkey = 'Bearer_xdh'
         #let babody = headers_drc['Authorization'];
         if (bamkey != (undefined || null)) {
             
-            $.write(ba, '#Bearer_xdh');
-            $.notify('获取新达汇：Bearer成功',  ba);
+            $.write(bamkey, '#Bearer_xdh');
+            $.notify('获取新达汇：Bearer成功',  bamkey);
             console.log('xdh',bamkey);
         }
     }
