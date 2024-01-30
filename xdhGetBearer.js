@@ -7,12 +7,12 @@ const bearerkey = 'Bearer_xdh'
     else {
         let headers_xdh = $request.headers;
         let body_xdh = $request.body;
-        let bamkey = headers_drc;
+        let bamkey = headers_xdh;
         let babody = body_xdh;
         if (bamkey != (undefined || null)) {
             
             $.write(bamkey, '#Bearer_xdh');
-            $.notify('获取新达汇：Bearer成功',  bamkey);
+            $.notify('获取新达汇：Bearer成功',  bamkey，babody);
             console.log('xdh',bamkey);
         }
     }
