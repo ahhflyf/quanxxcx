@@ -6,7 +6,7 @@ const bearerbodykey = 'Bearerbody_xdh'
     }
     else {
         let body_xdh = $request.body;
-        let babody = JSON.stringify(body_xdh);
+        let babody = JSON.parse(body_xdh);
         if ((babody !== undefined && babody !== null)){
             
      
