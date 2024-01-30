@@ -7,8 +7,8 @@ const bearerkey = 'Bearer_xdh'
     else {
         let headers_xdh = $request.headers;
         let body_xdh = $request.body;
-        let bamkey = headers_drc[];
-        let babody = body_xdh[];
+        let bamkey = headers_drc;
+        let babody = body_xdh;
         if (bamkey != (undefined || null)) {
             
             $.write(bamkey, '#Bearer_xdh');
