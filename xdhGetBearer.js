@@ -7,7 +7,7 @@ const bearerkey = 'Bearer_xdh'
     else {
         let headers_xdh = $request.headers;
         let body_xdh = $request.body;
-        let bamkey = headers_drc['mKey','token'];
+        let bamkey = headers_drc;
         let babody = body_xdh;
         #let babody = headers_drc['Authorization'];
         if (bamkey != (undefined || null)) {
