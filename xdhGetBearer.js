@@ -9,7 +9,6 @@ const bearerkey = 'Bearer_xdh'
         let body_xdh = $request.body;
         let bamkey = headers_drc[];
         let babody = body_xdh[];
-        #let babody = headers_drc['Authorization'];
         if (bamkey != (undefined || null)) {
             
             $.write(bamkey, '#Bearer_xdh');
