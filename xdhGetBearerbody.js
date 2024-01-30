@@ -1,5 +1,5 @@
 const $ = new API("xdh_getToken");
-const bearerbodykey = 'Bearerbody_xdh'
+const bearerkey = 'Bearer_xdh'
 !(async () => {
     if ($.env.isNode) {
         console.log('仅限iOS设备抓包用!');
