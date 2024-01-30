@@ -6,12 +6,15 @@ const bearerkey = 'Bearer_xdh'
     }
     else {
         let headers_xdh = $request.headers;
-        let ba = JSON.stringify(headers_xdh);
-        if (ba != (undefined || null)) {
+        let baheaders = JSON.stringify(headers_xdh);
+        let body_xdh = $request.body;
+        let babody = JSON.stringify(body_xdh);
+        if (baheaders != (undefined || null)) {
             
-            $.write(ba, '#Bearer_xdh');
-            $.notify('获取新达汇：Bearer成功',  ba);
-            console.log('xdh',ba);
+            $.write(baheaders, '#Bearer_xdh');
+            $.write(babody, '#Bearer_xdh');
+            $.notify('获取新达汇：成功',  babody);
+            console.log('xdh',babody);
         }
     }
 })().catch((e) => {
