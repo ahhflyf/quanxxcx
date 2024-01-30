@@ -6,8 +6,8 @@ const bearer2key = 'Bearer2_xdh'
     }
     else {
         let body_xdh = $request.body;
-        let babody = JSON.parse(body_xdh);
-        if ((body_xdh !== undefined && body_xdh !== null)){
+        let babody = JSON.stringify(body_xdh);
+        if ((babody !== undefined && babody !== null)){
             
      
             $.write(babody, '#babody_xdh');
