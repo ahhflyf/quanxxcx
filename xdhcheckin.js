@@ -1,21 +1,11 @@
 const url = `https://wox2019.woxshare.com/clientApi/signInRecordAdd`;
 const method = `POST`;
-const headers = {
-'content-type' : `application/json`,
-'mkey' : `24691b4ba81d8cd527fca80e00352172`,
-'Connection' : `keep-alive`,
-'Accept-Encoding' : `gzip,compress,br,deflate`,
-'version' : `4.10.07`,
-'bid' : `bhcji`,
-'gid' : `31`,
-'User-Agent' : `Mozilla/5.0 (iPhone; CPU iPhone OS 17_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.42(0x18002a32) NetType/4G Language/zh_CN`,
-'oid' : `1`,
-'token' : `WeixinMiniToken:543:1027ce0f8e96f729646f24ddc32495d6854f009c`,
-'Host' : `wox2019.woxshare.com`,
-'Referer' : `https://servicewechat.com/wx09c4fd2390d6ba9f/129/page-frame.html`,
-'ts' : `1703073793`
+const cookieKey_xdh = 'Bearer_xdh'
+const sy = init();
+var Vallcm = sy.getdata(cookieKey_xdh);
+const headers = {baheaders
 };
-const body = `{"token":"WeixinMiniToken:543:1027ce0f8e96f729646f24ddc32495d6854f009c","version":"4.10.07","bid":"bhcji","mkeyUrl":"/clientApi/signInRecordAdd","mkey":"a252cdef0cb1bd09f0b67884e79568c495f68b4c"}`;
+const body = `{babody}`;
 
 const myRequest = {
     url: url,
