@@ -19,4 +19,5 @@ hostname = member.imixpark.com, mina-cmapi.cp-properties.cn, weixinnew.lalaport-
 ^https\:\/\/www\.kezaihui\.com\/saintpeter\/user\/business_groups\/0fb2d1dbebc04b9ca376a0265f27539f\/user_checkin_info url script-request-header https://raw.githubusercontent.com/ahhflyf/quanxxcx/main/whGetBearer.js
 
 # 新达汇 cookie
-^https\:\/\/wox2019\.woxshare\.com\/clientApi\/popupList url script-request-header https://raw.githubusercontent.com/ahhflyf/quanxxcx/main/xdhGetBearerbody.js
+^https\:\/\/wox2019\.woxshare\.com\/clientApi\/popupList url script-request-header https://raw.githubusercontent.com/ahhflyf/quanxxcx/main/xdhGetBearer.js
+^https\:\/\/wox2019\.woxshare\.com\/clientApi\/popupList url script-request-body https://raw.githubusercontent.com/ahhflyf/quanxxcx/main/xdhGetBearerbody.js
