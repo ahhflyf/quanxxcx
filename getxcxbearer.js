@@ -16,7 +16,7 @@ hostname = member.imixpark.com, mina-cmapi.cp-properties.cn, weixinnew.lalaport-
 ^https\:\/\/vipclub\.lcmsh\.com\:52501\/api\/Sign\/SignIn url script-request-header https://raw.githubusercontent.com/ahhflyf/quanxxcx/main/lcmGetBearer.js?token=GHSAT0AAAAAACUQ2OKF5TJOEZ5WWK5EA7KQZVKCZXQ
 
 # wh cookie
-^https\:\/\/www\.kezaihui\.com\/saintpeter\/user\/business_groups\/0fb2d1dbebc04b9ca376a0265f27539f\/user_checkin_info url script-request-header https://raw.githubusercontent.com/ahhflyf/quanxxcx/main/whGetBearer.js?token=GHSAT0AAAAAACUQ2OKF5TJOEZ5WWK5EA7KQZVKCZXQ
+#^https\:\/\/www\.kezaihui\.com\/saintpeter\/user\/business_groups\/0fb2d1dbebc04b9ca376a0265f27539f\/user_checkin_info url script-request-header https://raw.githubusercontent.com/ahhflyf/quanxxcx/main/whGetBearer.js?token=GHSAT0AAAAAACUQ2OKF5TJOEZ5WWK5EA7KQZVKCZXQ
 
 # 新达汇 cookie
 #^https\:\/\/wox2019\.woxshare\.com\/clientApi\/popupList url script-request-header https://raw.githubusercontent.com/ahhflyf/quanxxcx/main/xdhGetBearer.js
