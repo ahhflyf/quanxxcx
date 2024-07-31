@@ -7,10 +7,10 @@ hostname = member.imixpark.com, mina-cmapi.cp-properties.cn, weixinnew.lalaport-
 ^https\:\/\/weixinnew\.lalaport\-jq\.com\:42211\/api\/Sign\/SignIn url script-request-header https://raw.githubusercontent.com/ahhflyf/quanxxcx/main/lalaGetBearer.js?token=GHSAT0AAAAAACUQ2OKFBULP7V22SZRQAYA4ZVKCZAQ
 
 # 船厂 cookie
-^https\:\/\/mina\-cmapi\.cp\-properties\.cn\:1443\/api\/VipInfo\/Sign url script-request-header https://raw.githubusercontent.com/ahhflyf/quanxxcx/main/cmapiGetBearer.js?token=GHSAT0AAAAAACUQ2OKF5TJOEZ5WWK5EA7KQZVKCZXQ
+^https\:\/\/mina\-cmapi\.cp\-properties\.cn\:1443\/api\/VipInfo\/Sign url script-request-header https://raw.githubusercontent.com/ahhflyf/quanxxcx/main/cmapiGetBearer.js?token=GHSAT0AAAAAACUQ2OKFEE6YY5JE7HAO2V72ZVKC4WQ
 
 # 大融城 cookie
-^https\:\/\/member\.imixpark\.com\:48889\/api\/Sign\/SignIn  url script-request-header https://raw.githubusercontent.com/ahhflyf/quanxxcx/main/drcGetBearer.js?token=GHSAT0AAAAAACUQ2OKF5TJOEZ5WWK5EA7KQZVKCZXQ
+^https\:\/\/member\.imixpark\.com\:48889\/api\/Sign\/SignIn  url script-request-header https://raw.githubusercontent.com/ahhflyf/quanxxcx/main/drcGetBearer.js?token=GHSAT0AAAAAACUQ2OKEN3KONZ3IY32KFN5CZVKC5BA
 
 # lcm cookie
 ^https\:\/\/vipclub\.lcmsh\.com\:52501\/api\/Sign\/SignIn url script-request-header https://raw.githubusercontent.com/ahhflyf/quanxxcx/main/lcmGetBearer.js?token=GHSAT0AAAAAACUQ2OKF5TJOEZ5WWK5EA7KQZVKCZXQ
