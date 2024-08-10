@@ -5,8 +5,8 @@ const bearerkey = 'Bearer_sl'
         console.log('仅限iOS设备抓包用!');
     }
     else {
-        let headers_drc = $request.headers;
-        let ba = headers_drc['token'];      
+        let headers_sl = $request.headers;
+        let ba = headers_sl['token'];      
         if (ba != (undefined || null)) {
             
             $.write(ba, '#Bearer_sl');
