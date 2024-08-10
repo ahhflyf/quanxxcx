@@ -12,7 +12,7 @@ const headers = {
 'token' : Valsl,
 'User-Agent' : `Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.38(0x1800262a) NetType/WIFI Language/zh_CN`
 };
-const body = `null`;
+const body = `{"currentMemberId":1,"projectId":1,"memberId":527739}`;
 
 const myRequest = {
     url: url,
