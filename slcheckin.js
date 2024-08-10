@@ -1,6 +1,6 @@
 const url = `https://sunland.cjtzn.com/api/user/memberSign/sign`;
 const method = `POST`;
-const cookieKey_lala = 'Bearer_sl'
+const cookieKey_sl = 'Bearer_sl'
 const sy = init();
 var Valsl = sy.getdata(cookieKey_sl);
 const headers = {
