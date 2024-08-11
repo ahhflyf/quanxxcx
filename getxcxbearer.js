@@ -4,16 +4,16 @@ hostname = member.imixpark.com, mina-cmapi.cp-properties.cn, weixinnew.lalaport-
 
 
 # lalaport cookie
-^https\:\/\/weixinnew\.lalaport\-jq\.com\:42211\/api\/Build\/GetTarBarlist url script-request-header https://raw.githubusercontent.com/ahhflyf/quanxxcx/main/lalaGetBearer.js
+^https\:\/\/weixinnew\.lalaport\-jq\.com\:42211\/api\/VipInfo\/QueryVipInfoAsync url script-request-header https://raw.githubusercontent.com/ahhflyf/quanxxcx/main/lalaGetBearer.js
 
 # 船厂 cookie
-^https\:\/\/mina\-cmapi\.cp\-properties\.cn\:1443\/api\/Build\/GetTarBarlist url script-request-header https://raw.githubusercontent.com/ahhflyf/quanxxcx/main/cmapiGetBearer.js
+^https\:\/\/mina\-cmapi\.cp\-properties\.cn\:1443\/api\/VipInfo\/QueryVipInfoAsync_office url script-request-header https://raw.githubusercontent.com/ahhflyf/quanxxcx/main/cmapiGetBearer.js
 
 # 大融城 cookie
-^https\:\/\/member\.imixpark\.com\:48889\/api\/Aauth\/GetAgreeserStatus  url script-request-header https://raw.githubusercontent.com/ahhflyf/quanxxcx/main/drcGetBearer.js
+^https\:\/\/member\.imixpark\.com\:48889\/api\/Build\/QueryBuildingLocation  url script-request-header https://raw.githubusercontent.com/ahhflyf/quanxxcx/main/drcGetBearer.js
 
 # lcm cookie
-^https\:\/\/vipclub\.lcmsh\.com\:52501\/api\/api\/Build\/GetTarBarlist url script-request-header https://raw.githubusercontent.com/ahhflyf/quanxxcx/main/lcmGetBearer.js
+^https\:\/\/vipclub\.lcmsh\.com\:52501\/api\/api\/Aauth\/GetAgreeserStatus url script-request-header https://raw.githubusercontent.com/ahhflyf/quanxxcx/main/lcmGetBearer.js
 
 # wh cookie
 #^https\:\/\/www\.kezaihui\.com\/saintpeter\/user\/business_groups\/0fb2d1dbebc04b9ca376a0265f27539f\/user_checkin_info url script-request-header https://raw.githubusercontent.com/ahhflyf/quanxxcx/main/whGetBearer.js
