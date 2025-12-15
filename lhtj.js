@@ -138,7 +138,7 @@ async function lotterySignin(user) {
                 'x-lf-channel': user['x-lf-channel'],
                 'origin': 'https://longzhu.longfor.com',
                 'referer': 'https://longzhu.longfor.com/',
-                'authtoken' : 20bc1a92a7ac46239e39f63f5a44d29b
+                'authtoken' : '20bc1a92a7ac46239e39f63f5a44d29b'
             },
             type: 'post',
             dataType: "json",
@@ -169,8 +169,8 @@ async function lotteryClock(user) {
                 'origin': 'https://longzhu.longfor.com',
                 'referer': 'https://longzhu.longfor.com/',
                 'x-lf-dxrisk-source': user['x-lf-dxrisk-source'],
-                'authtoken' : 20bc1a92a7ac46239e39f63f5a44d29b
-                'bucode' : C20400,
+                'authtoken' : 20bc1a92a7ac46239e39f63f5a44d29b',
+                'bucode' : C20400
             },
             type: 'post',
             dataType: "json",
