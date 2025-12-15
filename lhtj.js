@@ -127,7 +127,7 @@ async function signin(user) {
 async function lotterySignin(user) {
     try {
         const opts = {
-            url: "https://gw2c-hw-open.longfor.com/lmarketing-task-api-mvc-prod/openapi/task/v1/lottery/sign",
+            url: "https://gw2c-hw-open.longfor.com/llt-gateway-prod/api/v1/activity/auth/lottery/sign",
             headers: {
             'Accept-Encoding' : `gzip, deflate, br`,
 'bucode' : `C20400`,
@@ -166,7 +166,7 @@ async function lotterySignin(user) {
 async function lotteryClock(user) {
     try {
         const opts = {
-            url: "https://gw2c-hw-open.longfor.com/lmarketing-task-api-mvc-prod/openapi/task/v1/lottery/luck",
+            url: "https://gw2c-hw-open.longfor.com/llt-gateway-prod/api/v1/activity/auth/lottery/click",
             headers: {
             'Accept-Encoding' : `gzip, deflate, br`,
 'bucode' : `C20400`,
