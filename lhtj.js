@@ -132,17 +132,19 @@ async function lotterySignin(user) {
                 'cookie': user.cookie,
                 'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 15_8 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.48(0x18003029) NetType/4G Language/zh_CN miniProgram/wx50282644351869da',
                 'x-lf-usertoken': user.token,
+                'bucode' : C20400,
                 'x-gaia-api-key': 'c06753f1-3e68-437d-b592-b94656ea5517',
                 'x-lf-bu-code': user['x-lf-bu-code'],
                 'x-lf-channel': user['x-lf-channel'],
                 'origin': 'https://longzhu.longfor.com',
-                'referer': 'https://longzhu.longfor.com/'
+                'referer': 'https://longzhu.longfor.com/',
+                'authtoken' : 20bc1a92a7ac46239e39f63f5a44d29b
             },
             type: 'post',
             dataType: "json",
             body: {
-                "task_id": "",
-                "activity_no": "11111111111727686365925771280000"
+                "component_no" : "CD19U18I26K291GU",
+                "activity_no": "AP25T112V6099DOB"
             }
         }
         let res = await fetch(opts);
@@ -166,15 +168,16 @@ async function lotteryClock(user) {
                 'x-lf-channel': user['x-lf-channel'],
                 'origin': 'https://longzhu.longfor.com',
                 'referer': 'https://longzhu.longfor.com/',
-                'x-lf-dxrisk-source': user['x-lf-dxrisk-source']
+                'x-lf-dxrisk-source': user['x-lf-dxrisk-source'],
+                'authtoken' : 20bc1a92a7ac46239e39f63f5a44d29b
+                'bucode' : C20400,
             },
             type: 'post',
             dataType: "json",
             body: {
-                "task_id": "",
-                "time": getDateTime(),
-                "activity_no": "11111111111727686365925771280000",
-                "use_luck": 0
+                 "batch_no" : "",
+                 "component_no" : "CD19U18I26K291GU",
+                 "activity_no" : "AP25T112V6099DOB"
             }
         }
         let res = await fetch(opts);
