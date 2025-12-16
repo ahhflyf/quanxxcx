@@ -1,7 +1,7 @@
 /*
 ------------------------------------------
 @Author: Leiyiyan
-@Date: 2024-10-08 11:25:00
+@Date: 2025-12-08 11:25:00
 @Description: 龙湖天街小程序签到、抽奖
 ------------------------------------------
 获取 Cookie：打开龙湖天街小程序，进入 我的 - 签到赚珑珠 - 任务赚奖励 - 马上签到。
@@ -157,7 +157,7 @@ async function lotterySignin(user) {
             }
         }
         let res = await fetch(opts);
-        $.log(`${$.doFlag[res?.code == '0000']} ${res?.code == '0000' ? '抽奖签到: 成功, 获得' + res?.data?.ticket_times + '次抽奖机会' : '抽奖签到: ' + res?.message}\n`);
+        $.log(`${$.doFlag[res?.code == '0000']} ${res?.code == '0000' ? '抽奖签到: 成功, 获得' + res?.data?.chance + '次抽奖机会' : '抽奖签到: ' + res?.message}\n`);
     } catch (e) {
         $.log(`⛔️ 抽奖签到失败！${e}\n`)
     }
@@ -197,7 +197,7 @@ async function lotteryClock(user) {
             }
         }
         let res = await fetch(opts);
-        $.log(`${$.doFlag[res?.code == '0000']} ${res?.code == '0000' ? '抽奖成功, 获得' + res?.data?.desc : '抽奖: ' + res?.message}\n`);
+        $.log(`${$.doFlag[res?.code == '0000']} ${res?.code == '0000' ? '抽奖成功, 获得' + res?.data?.reward_num : '抽奖: ' + res?.message}\n`);
     } catch (e) {
         $.log(`⛔️ 抽奖失败！${e}\n`)
     }
