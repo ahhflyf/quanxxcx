@@ -78,9 +78,9 @@ async function main() {
                  else {
                    //app
                    // 抽奖签到
-                    await lotterySignin(userapp)
+                    await lotterySignin_app(user)
                     // 抽奖
-                    await lotteryClock(userapp) 
+                    await lotteryClock_app(user) 
                     },
                 //查询用户信息
                 const { nick_name, growth_value, level, head_portrait } = await getUserInfo(user)
@@ -214,7 +214,7 @@ async function lotteryClock(user) {
 }
 //app部分
 // 抽奖签到
-async function lotterySignin(userappu {
+async function lotterySignin_app(user) {
     try {
         const opts = {
             url: "https://gw2c-hw-open.longfor.com/llt-gateway-prod/api/v1/activity/auth/lottery/sign",
@@ -253,7 +253,7 @@ async function lotterySignin(userappu {
     }
 }
 // 抽奖
-async function lotteryClock(userapp) {
+async function lotteryClock_app(user) {
     try {
         const opts = {
             url: "https://gw2c-hw-open.longfor.com/llt-gateway-prod/api/v1/activity/auth/lottery/click",
