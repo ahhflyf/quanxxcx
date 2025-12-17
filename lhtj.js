@@ -1,7 +1,7 @@
 /*
 ------------------------------------------
 @Author: Leiyiyan
-@Date: 2025-12-17 22:15:00
+@Date: 2025-12-17 22:18:00
 @Description: 龙湖天街小程序签到、抽奖
 ------------------------------------------
 获取 Cookie：打开龙湖天街小程序，进入 我的 - 签到赚珑珠 - 任务赚奖励 - 马上签到。
@@ -70,7 +70,7 @@ async function main() {
             const reward_num = await signin(user);
             if ($.ckStatus) {
                   //小程序
-                if ($user['x-lf-bu-code']!== 'L00602') {
+                if (user['x-lf-bu-code']!== 'L00602') {
                    // 抽奖签到
                    await lotterySignin(user)
                    // 抽奖
@@ -81,7 +81,7 @@ async function main() {
                     await lotterySignin_app(user)
                     // 抽奖
                     await lotteryClock_app(user) 
-                    },
+                    }
                 //查询用户信息
                 const { nick_name, growth_value, level, head_portrait } = await getUserInfo(user)
                 //查询珑珠
@@ -242,8 +242,8 @@ async function lotterySignin_app(user) {
             type: 'post',
             dataType: "json",
             body: {
-                "component_no" : "CD19U18I26K291GU",
-                "activity_no": "AP25T112V6099DOB"
+                "component_no" : "CF19Z15Q58X4O6T0",
+                "activity_no": "AP255112Z6RBXVEY"
             }
         }
         let res = await fetch(opts);
@@ -282,12 +282,12 @@ async function lotteryClock_app(user) {
             dataType: "json",
             body: {
                  "batch_no" : "",
-                 "component_no" : "CD19U18I26K291GU",
-                 "activity_no" : "AP25T112V6099DOB"
+                 "component_no" : "CF19Z15Q58X4O6T0",
+                 "activity_no" : "AP255112Z6RBXVEY"
             }
         }
         let res = await fetch(opts);
-        $.log(`${$.doFlag[res?.code == '0000']} ${res?.code == '0000' ? '抽奖成功, 获得' + res?.data?.reward_num : '抽奖: ' + res?.message}\n`);
+        $.log(`${$.doFlag[res?.code == '0000']} ${res?.code == '0000' ? '抽奖成功, 获得' + res?.data?.remark : '抽奖: ' + res?.message}\n`);
     } catch (e) {
         $.log(`⛔️ 抽奖失败！${e}\n`)
     }
