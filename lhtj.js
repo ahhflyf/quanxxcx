@@ -69,19 +69,10 @@ async function main() {
             // 签到
             const reward_num = await signin(user);
             if ($.ckStatus) {
-                  //小程序
-                if (user['x-lf-bu-code']!== 'L00602') {
                    // 抽奖签到
                    await lotterySignin(user)
                    // 抽奖
-                   await lotteryClock(user)}
-                 else {
-                   //app
-                   // 抽奖签到
-                    await lotterySignin_app(user)
-                    // 抽奖
-                    await lotteryClock_app(user) 
-                    }
+                   await lotteryClock(user)
                 //查询用户信息
                 const { nick_name, growth_value, level, head_portrait } = await getUserInfo(user)
                 //查询珑珠
