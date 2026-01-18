@@ -69,6 +69,8 @@ async function main() {
             // 签到
             const reward_num = await signin(user);
             if ($.ckStatus) {
+                   //抽奖激活
+                   await lotterySigninaction(user)
                    // 抽奖签到
                    await lotterySignin(user)
                    // 抽奖
@@ -124,6 +126,44 @@ async function signin(user) {
     }
 }
 //小程序部分
+//激活任务
+async function lotterySigninaction(user) {
+    try {
+        const opts = {
+            url: "https://gw2c-hw-open.longfor.com/llt-gateway-prod/api/v1/activity/common/task/list?component_no=CO13545A08P7EI9Y&activity_no=AP25O123K1HEE8DB",
+            headers: {
+            'Accept-Encoding' : `gzip, deflate, br`,
+'bucode' : user['x-lf-bu-code'],
+'Host' : `gw2c-hw-open.longfor.com`,
+'Origin' : `https://llt.longfor.com`,
+'x-gaia-api-key' : `2f9e3889-91d9-4684-8ff5-24d881438eaf`,
+'X-LF-DXRisk-Token' : user['x-lf-dxrisk-token'],
+'Sec-Fetch-Dest' : `empty`,
+'Connection' : `keep-alive`,
+'channel' : user['x-lf-channel'],
+'Sec-Fetch-Site' : `same-site`,
+'User-Agent' : `Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.66(0x1800422c) NetType/WIFI Language/zh_CN miniProgram/wx50282644351869da`,
+'Content-Type' : `application/json`,
+'Referer' : `https://llt.longfor.com/`,
+'X-LF-DXRisk-Source' : `5`,
+'Accept-Language' : `zh-CN,zh-Hans;q=0.9`,
+'Accept' : `application/json, text/plain, */*`,
+'Cookie' : user.cookie,
+'authtoken' : user.token,
+'Sec-Fetch-Mode' : `cors`
+            },
+            type: 'post',
+            dataType: "json",
+            body: {
+              
+            }
+        }
+        let res = await fetch(opts);
+        $.log(`${$.doFlag[res?.code == '0000']} ${res?.code == '0000' ? '抽奖激活' `);
+    } catch (e) {
+        $.log(`⛔️ 抽奖激活失败！${e}\n`)
+    }
+}
 // 抽奖签到
 async function lotterySignin(user) {
     try {
@@ -153,8 +193,7 @@ async function lotterySignin(user) {
             type: 'post',
             dataType: "json",
             body: {
-                "component_no" : "CD19U18I26K291GU",
-                "activity_no": "AP25T112V6099DOB"
+                "component_no":"CO13545A08P7EI9Y","activity_no":"AP25O123K1HEE8DB"
             }
         }
         let res = await fetch(opts);
@@ -193,8 +232,7 @@ async function lotteryClock(user) {
             dataType: "json",
             body: {
                  "batch_no" : "",
-                 "component_no" : "CD19U18I26K291GU",
-                 "activity_no" : "AP25T112V6099DOB"
+                 "component_no":"CO13545A08P7EI9Y","activity_no":"AP25O123K1HEE8DB"
             }
         }
         let res = await fetch(opts);
