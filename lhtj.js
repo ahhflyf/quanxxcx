@@ -152,14 +152,14 @@ async function lotterySigninaction(user) {
 'authtoken' : user.token,
 'Sec-Fetch-Mode' : `cors`
             },
-            type: 'post',
+            type: 'get',
             dataType: "json",
             body: {
               
             }
         }
         let res = await fetch(opts);
-        $.log(`${$.doFlag[res?.code == '0000']} ${res?.code == '0000' ? '抽奖激活' );
+        $.log(`${$.doFlag[res?.code == '0000']} ${res?.code == '0000' ? '抽奖签到: 成功, 获得' + res?.data?.chance + '次抽奖机会' : '抽奖签到: ' + res?.message}\n`);
     } catch (e) {
         $.log(`⛔️ 抽奖激活失败！${e}\n`)
     }
