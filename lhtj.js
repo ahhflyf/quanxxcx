@@ -159,7 +159,7 @@ async function lotterySigninaction(user) {
             }
         }
         let res = await fetch(opts);
-        $.log(`${$.doFlag[res?.code == '0000']} ${res?.code == '0000' ? '抽奖激活' `);
+        $.log(`${$.doFlag[res?.code == '0000']} ${res?.code == '0000' ? '抽奖激活' );
     } catch (e) {
         $.log(`⛔️ 抽奖激活失败！${e}\n`)
     }
