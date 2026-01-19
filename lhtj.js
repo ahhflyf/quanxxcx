@@ -69,7 +69,7 @@ async function main() {
             // 签到
             const reward_num = await signin(user);
             if ($.ckStatus) {
-                   //抽奖激活
+                   // 抽奖激活
                    await lotterySigninaction(user)
                    // 抽奖签到
                    await lotterySignin(user)
@@ -125,8 +125,8 @@ async function signin(user) {
         $.log(`⛔️ 每日签到失败！${e}\n`)
     }
 }
-//小程序部分
-//激活任务
+// 小程序部分
+// 激活任务
 async function lotterySigninaction(user) {
     try {
         const opts = {
