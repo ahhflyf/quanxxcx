@@ -10,7 +10,7 @@ hostname = member.imixpark.com, mina-cmapi.cp-properties.cn, weixinnew.lalaport-
 ^https\:\/\/mina\-cmapi\.cp\-properties\.cn\:1443\/api\/VipInfo\/Sign url script-request-header https://raw.githubusercontent.com/ahhflyf/quanxxcx/main/cmapiGetBearer.js
 
 # 大融城 cookie
-^https\:\/\/member\.imixpark\.com\:48889\/api\/Sign\/SignIn  url script-request-header https://raw.githubusercontent.com/ahhflyf/quanxxcx/main/drcGetBearer.js
+^https\:\/\/memberv5\.imixpark\.com\/fzapi\/ApiScrmCusApp\/IMIX\/Sign\/ParticipateActivitySignInIMIX  url script-request-header https://raw.githubusercontent.com/ahhflyf/quanxxcx/main/drcGetBearer.js
 
 # lcm cookie
 ^https\:\/\/vipclub\.lcmsh\.com\:52501\/api\/api\/Sign\/SignIn url script-request-header https://raw.githubusercontent.com/ahhflyf/quanxxcx/main/lcmGetBearer.js
