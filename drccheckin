@@ -4,7 +4,7 @@
  * 
  */
 
-const url = `https://member.imixpark.com:48889/api/Sign/SignIn`;
+const url = `https://memberv5.imixpark.com/fzapi/ApiScrmCusApp/IMIX/Sign/ParticipateActivitySignInIMIX`;
 const method = `POST`;
 const cookieKey_drc = 'Bearer_drc'
 const sy = init();
@@ -15,11 +15,11 @@ const headers = {
 'Connection' : `keep-alive`,
 'Referer' : `https://servicewechat.com/wx24d80b0b74d12b46/116/page-frame.html`,
 'buildingid' : `80019`,
-'Host' : `member.imixpark.com:48889`,
+'Host' : `member.imixpark.com`,
 'Authorization' : drcVal,
-'User-Agent' : `Mozilla/5.0 (iPhone; CPU iPhone OS 16_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.32(0x18002038) NetType/WIFI Language/zh_CN`
+'User-Agent' : `Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.67(0x18004330) NetType/4G Language/zh_CN`
 };
-const body = `null`;
+const body = ``;
 
 const myRequest = {
     url: url,
