@@ -1,7 +1,7 @@
 /*
 ------------------------------------------
 @Author: Leiyiyan
-@Date: 2025-12-17 22:18:00
+@Date: 2026-3-17 22:18:06
 @Description: 龙湖天街小程序签到、抽奖
 ------------------------------------------
 获取 Cookie：打开龙湖天街小程序，进入 我的 - 签到赚珑珠 - 任务赚奖励 - 马上签到。
@@ -130,7 +130,7 @@ async function signin(user) {
 async function lotterySigninaction(user) {
     try {
         const opts = {
-            url: "https://gw2c-hw-open.longfor.com/llt-gateway-prod/api/v1/activity/common/task/list?component_no=CW16530P28V520GL&activity_no=AP26P012R90F1UKX",
+            url: "https://gw2c-hw-open.longfor.com/llt-gateway-prod/api/v1/activity/common/task/list?component_no=CF17F20C54L0SYEZ&activity_no=AP26E022L8FTDAWH",
             headers: {
             'Accept-Encoding' : `gzip, deflate, br`,
 'bucode' : user['x-lf-bu-code'],
@@ -193,7 +193,7 @@ async function lotterySignin(user) {
             type: 'post',
             dataType: "json",
             body: {
-                "component_no":"CW16530P28V520GL","activity_no":"AP26P012R90F1UKX"
+                "component_no":"CF17F20C54L0SYEZ","activity_no":"AP26E022L8FTDAWH"
             }
         }
         let res = await fetch(opts);
@@ -232,7 +232,7 @@ async function lotteryClock(user) {
             dataType: "json",
             body: {
                  "batch_no" : "",
-                 "component_no":"CW16530P28V520GL","activity_no":"AP26P012R90F1UKX"
+                 "component_no":"CF17F20C54L0SYEZ","activity_no":"AP26E022L8FTDAWH"
             }
         }
         let res = await fetch(opts);
