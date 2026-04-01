@@ -130,7 +130,7 @@ async function signin(user) {
 async function lotterySigninaction(user) {
     try {
         const opts = {
-            url: "https://gw2c-hw-open.longfor.com/llt-gateway-prod/api/v1/activity/common/task/list?component_no=CF17F20C54L0SYEZ&activity_no=AP26E022L8FTDAWH",
+            url: "https://gw2c-hw-open.longfor.com/llt-gateway-prod/api/v1/activity/common/task/list?component_no=CA17O06B10W9YLJC&activity_no=AP26L033816BKVRE",
             headers: {
             'Accept-Encoding' : `gzip, deflate, br`,
 'bucode' : user['x-lf-bu-code'],
@@ -193,7 +193,7 @@ async function lotterySignin(user) {
             type: 'post',
             dataType: "json",
             body: {
-                "component_no":"CF17F20C54L0SYEZ","activity_no":"AP26E022L8FTDAWH"
+                "component_no":"CA17O06B10W9YLJC","activity_no":"AP26L033816BKVRE"
             }
         }
         let res = await fetch(opts);
@@ -232,7 +232,7 @@ async function lotteryClock(user) {
             dataType: "json",
             body: {
                  "batch_no" : "",
-                 "component_no":"CF17F20C54L0SYEZ","activity_no":"AP26E022L8FTDAWH"
+                 "component_no":"CA17O06B10W9YLJC","activity_no":"AP26L033816BKVRE"
             }
         }
         let res = await fetch(opts);
